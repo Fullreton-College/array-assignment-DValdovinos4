@@ -2,7 +2,6 @@
 
 using namespace std;
 
-// Function prototype
 int countPerfect(const int scores[], int size);
 
 int main() {
@@ -14,7 +13,8 @@ int main() {
 
     for(int i=0;i<20;i++){
         cin>>input;
-        if(i==-1){
+
+        if(input==-1){
             break;
         }
         scores[i]=input;
@@ -29,14 +29,12 @@ int main() {
     return 0;
 }
 
-// Value-returning function to count scores of 100
 int countPerfect(const int scores[], int size) {
     int totalPerfect = 0;
     for(int i=0;i<size;i++){
         if(scores[i]==100){
             totalPerfect++;
         }
-
- 
-    return totalPerfect;
+}
+return totalPerfect;
 }
